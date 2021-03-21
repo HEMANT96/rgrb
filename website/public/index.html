@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Regrub</title>
+
+  <base href="/" />
+
+  <meta name="color-scheme" content="light dark" />
+  <meta name="viewport"
+    content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="msapplication-tap-highlight" content="no" />
+
+  <link rel="shortcut icon" type="image/png" href="<%= BASE_URL %>assets/icon/favicon.png" />
+
+  <!-- add to homescreen for ios -->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-title" content="Ionic App" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+  
+  <script src="https://js.stripe.com/v3/"></script>
+  <script type="text/javascript">
+    // Create an instance of the Stripe object with your publishable API key
+  
+    // For test
+    window.stripeLib = Stripe("pk_test_51HykKcJ3K6BjgJ1k91nBiKuvQ2pIf8PufDTRT4SmGtg5Y8oTD7rO133wnVwwgsZG8PC5RwvFscLxpKMcxEqRSGUj00btZsyY75");
+  
+  </script>
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+
+  <style>
+    .ion-page {
+      max-width: 768px;
+      margin: 0 auto;
+    }
+
+    body {
+      background: #f7f7f7;
+    }
+
+  </style>
+<script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script async src="https://sdk.amazonaws.com/js/aws-sdk-2.6.10.min.js"></script>
+<script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJ6JHDuhpFkV5fLheiJs5Izbs4zLVQn14&libraries=places"></script>
+
+</head>
+
+<body>
+  <div id="app"></div>
+</body>
+
+
+<script>
+
+  const main = async () => {
+    const content = document.querySelector('ion-content');
+    const styles = document.createElement('style');
+
+    styles.textContent = `
+    ::-webkit-scrollbar {
+      width: 4px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+      
+      border-radius: 4px;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      background: #888; 
+      border-radius: 4px;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+      background: #999; 
+    }
+  `;
+    content.shadowRoot.appendChild(styles);
+  };
+
+  setTimeout(() => {
+   // main();
+  }, 250);
+
+</script>
+
+</html>
